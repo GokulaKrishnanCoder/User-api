@@ -1,7 +1,9 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
 
-const uri = 'mongodb+srv://Gokul:Gokul16@kprcluster.ekfn7.mongodb.net/?retryWrites=true&w=majority&appName=KPRCluster';
+const uri = process.env.MongoDB;
 
 const connector = async () => {
     try{
